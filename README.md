@@ -6,6 +6,18 @@ A Mac desktop app for evaluating student housing chatbot transcripts. Built for 
 
 ---
 
+## Background
+
+Student housing operators — purpose-built student accommodation (PBSA) providers, letting agents, and university-affiliated housing platforms — increasingly rely on AI chatbots to handle enquiries around the clock. A prospective tenant might message at midnight asking about room availability, pricing, or contract terms, and the bot needs to respond helpfully, capture their details, and hand off to a leasing agent when appropriate.
+
+The bot's core job is three things: **qualify the lead** (collect name, email, phone, university, move-in date, budget), **answer FAQs** without overstepping, and **escalate gracefully** when a human is needed. Getting all three right — consistently, across hundreds of conversations — is harder than it sounds.
+
+Most teams evaluate chatbot quality informally, if at all. A leasing manager skims a few transcripts. A developer eyeballs the logs. There's no shared rubric, no audit trail, and no way to know whether a prompt change last Tuesday actually made things better.
+
+ChatEval is the structured layer between raw transcripts and prompt improvement. It gives QA evaluators a consistent scoring framework across 8 dimensions, and gives prompt engineers aggregated failure analysis — which patterns are recurring, what's causing them, and exactly what instruction to add to the prompt to fix it.
+
+---
+
 ## What it does
 
 **Individual evaluation**
