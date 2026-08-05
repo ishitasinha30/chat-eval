@@ -7,7 +7,7 @@
     "dev": "concurrently -k -n VITE,ELECTRON -c cyan,magenta \"vite\" \"wait-on http://localhost:5173 && electron .\"",
     "build": "vite build",
     "dist": "vite build && electron-builder",
-    "rebuild": "./node_modules/.bin/electron-rebuild -f -w better-sqlite3"
+    "rebuild": "./node_modules/.bin/electron-rebuild -f -w better-sqlite3 || ./node_modules/.bin/@electron/rebuild -f -w better-sqlite3"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
@@ -21,6 +21,7 @@
     "concurrently": "^8.2.2",
     "electron": "^31.0.0",
     "electron-builder": "^24.13.3",
+    "@electron/rebuild": "^3.6.0",
     "electron-rebuild": "^3.2.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
